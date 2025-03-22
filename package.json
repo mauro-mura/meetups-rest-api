@@ -1,0 +1,16 @@
+{
+  "name": "meetups-rest-api",
+  "version": "1.0.0",
+  "description": "chatgpt rest api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mauro mura",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.21.2",
+    "bcrypt": "5.1.1",
+    "jsonwebtoken": "9.0.2"
+  }
+}
