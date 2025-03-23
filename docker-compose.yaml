@@ -1,0 +1,12 @@
+services:
+  meetups-api:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - meetups-api-data:/app/data
+    restart: unless-stopped
+    command: ["node", "server.js"]
+
+volumes:
+  meetups-api-data:
