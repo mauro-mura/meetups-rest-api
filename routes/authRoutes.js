@@ -6,7 +6,7 @@ const { loadData, saveData } = require('../utils/fileUtils');
 const { secretKey } = require('../config/config');
 const AppError = require('../utils/AppError');
 const router = express.Router();
-const usersFile = 'users.json';
+const usersFile = 'data/users.json';
 let users = loadData(usersFile);
 
 router.post('/signup', async (req, res, next) => {

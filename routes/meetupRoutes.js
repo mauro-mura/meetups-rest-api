@@ -4,7 +4,7 @@ const { authenticateToken } = require('../middleware/authMiddleware');
 const { loadData, saveData } = require('../utils/fileUtils');
 const AppError = require('../utils/AppError');
 const router = express.Router();
-const dataFile = 'meetups.json';
+const dataFile = 'data/meetups.json';
 let meetups = loadData(dataFile);
 let idCounter = meetups.length ? Math.max(...meetups.map(m => m.id)) + 1 : 1;
 
